@@ -90,7 +90,7 @@ function Hero() {
             className={`${
               currentMode === "dark" ? "cv-Dark-button" : "cv-glass-button"
             }`}
-            href="https://drive.google.com/uc?export=download&id=10XvVKsrFRgA2aNddFBPs075mDmZEApPR"
+            href="https://drive.google.com/uc?export=download&id=1hU9gFd_CfQRJj07Lo7l5c6FRGY2pmtAK"
             download
           >
             Download CV

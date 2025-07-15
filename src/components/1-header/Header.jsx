@@ -11,9 +11,11 @@ function Header() {
     return appear;
   };
 
-  const [theme, setTheme] = useState(
-    localStorage.getItem("currentMode") || "dark"
-  );
+  const [theme, setTheme] = useState(() => {
+    // Always start with dark mode
+    localStorage.setItem("currentMode", "dark");
+    return "dark";
+  });
 
   useEffect(() => {
     console.log("theme", theme);

@@ -8,10 +8,10 @@ function Contact() {
   return (
     <section className="contact-us" id="contact">
       <h1 className="title">
-        <span className="icon-envelope"></span> Contact us
+        <span className="icon-envelope"></span> Contact Me
       </h1>
       <p className="subtitle">
-        Contact us for more information and Get notified when I publish
+        Contact Me for more information and Get notified when I publish
         something new.
       </p>
       <div className="flex" style={{ justifyContent: "space-between" }}>
