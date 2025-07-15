@@ -1,5 +1,6 @@
 # 👋 Ahmed Gaafer — Front-End Developer Portfolio
 
+![React](https://img.shields.io/badge/Built%20With-React-61DAFB)
 Welcome! I'm Ahmed Gaafer, a passionate Front-End Developer with an engineering background. I specialize in building responsive, scalable web and mobile applications using modern tools like Angular, React, Flutter, and TypeScript.
 
 ![GIF Preview](screens/rec.gif)
@@ -55,7 +56,7 @@ I focus on building elegant, efficient UIs and delivering smooth digital experie
 
 ## 🛠️ Technologies
 
-- **Languages**: JavaScript, TypeScript, HTML, CSS
+- **Languages**: JavaScript, TypeScript, C#
 - **Frameworks**: Angular, React, Flutter, React Native
 - **Libraries**: Lottie, Framer Motion, Formspree
 - **Tools**: Git, GitHub, VSCode, npm, Webpack
@@ -71,7 +72,7 @@ I focus on building elegant, efficient UIs and delivering smooth digital experie
 
 > A full-featured e-commerce web app built with Angular. It supports product browsing, cart functionality, dynamic routing, and a responsive design for seamless shopping.
 
-![ShopZone Screenshot](https://github.com/ahmedgaafer1/shopzone-angular/raw/main/assets/screenshot.png)
+![ShopZone Screenshot](/public/images/ShopZoneAngular.png)
 
 ---
 
@@ -81,7 +82,7 @@ I focus on building elegant, efficient UIs and delivering smooth digital experie
 
 > A cross-platform mobile app for online shopping. Built with Flutter and Dart, it includes product listings, cart management, and a sleek user interface.
 
-![Flutter Screenshot](https://github.com/ahmedgaafer1/E-commerce-Flutter/raw/main/assets/screenshot.png)
+![Flutter Screenshot](/public/images/fluttercommerce.jpg)
 
 ---
 
@@ -95,7 +96,7 @@ I focus on building elegant, efficient UIs and delivering smooth digital experie
 
 > A lightweight and intuitive to-do list mobile app. Designed for task organization with a focus on usability and cross-platform performance.
 
-![ThinkSpace Screenshot](https://github.com/ahmedgaafer1/ThinkSpace/raw/main/assets/screenshot.png)
+![ThinkSpace Screenshot](/public/images/thinkspacereact.png)
 
 ---
 
@@ -125,9 +126,9 @@ I focus on building elegant, efficient UIs and delivering smooth digital experie
 
 ### 🌐 Portfolio Website
 
-#### [Portfolio](https://github.com/ahmedgaafer1/Portfolio)
+#### [Portfolio](https://github.com/ahmedgaafer1/my-portfolio)
 
-> This very portfolio! Built with React to showcase my projects, tech stack, and contact details in a simple, clean layout.
+> This very portfolio! Built entirely with **React.js**, showcasing my projects, tech stack, and contact details in a simple, clean layout.
 
 ---
 
