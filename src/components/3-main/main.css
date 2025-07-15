@@ -215,15 +215,11 @@ main.flex section.leftSection button.active {
 ========================*/
 
 main section.rightSection {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
-  align-items: stretch;
-  justify-items: center;
-  width: 100%;
-  margin: 0 auto;
 }
-
 @media (max-width: 1000px) {
   main section.rightSection {
     grid-template-columns: repeat(2, 1fr);
@@ -259,7 +255,7 @@ main section.rightSection .card {
 
 main section.rightSection .card img {
   border-radius: 5px;
-  height: 180px;
+  height: 120px;
   width: 100%;
   object-fit: contain;
   object-position: center;
