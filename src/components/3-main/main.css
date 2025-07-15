@@ -1,0 +1,330 @@
+.light .more-btn:hover {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+/* Project Modal Styles */
+.project-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-modal {
+  background: linear-gradient(
+    135deg,
+    var(--card-bg, #fff) 80%,
+    var(--blue, #5dbcfc) 120%
+  );
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.13),
+    0 1.5px 8px 0 rgba(0, 0, 0, 0.08);
+  padding: 2.2rem 2.2rem 1.5rem 2.2rem;
+  min-width: 320px;
+  max-width: 95vw;
+  width: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: modalIn 0.2s;
+  border: 1.5px solid var(--blue, #5dbcfc);
+}
+.dark .project-modal {
+  background: linear-gradient(135deg, #181f2a 80%, var(--blue, #5dbcfc) 120%);
+  color: var(--title, #fff);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.22),
+    0 1.5px 8px 0 rgba(0, 0, 0, 0.18);
+  border: 1.5px solid var(--blue, #5dbcfc);
+}
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--subtitle, #888);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.modal-close:hover {
+  color: var(--blue, #5dbcfc);
+}
+.modal-img {
+  width: 100%;
+  max-width: 320px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  margin-bottom: 1.2rem;
+}
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 18px 0 8px 0;
+  color: var(--title, #222);
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  font-family: inherit;
+}
+.dark .modal-title {
+  color: var(--title, #fff) !important;
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+.modal-desc {
+  font-size: 1.08rem;
+  color: var(--subtitle, #444);
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  font-family: inherit;
+  text-shadow: 0 1px 4px rgba(93, 188, 252, 0.07);
+}
+.dark .modal-desc {
+  /* color: var(--blue, #5dbcfc); */
+  color: white;
+  text-shadow: 0 2px 8px #0a2236;
+}
+.modal-links {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.modal-links .icon-github,
+.modal-links .icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 18px;
+  border-radius: 8px;
+  border: 1.5px solid var(--blue, #5dbcfc);
+  color: var(--blue, #5dbcfc);
+  background: rgba(93, 188, 252, 0.08);
+  font-size: 1.04rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 1px 4px rgba(93, 188, 252, 0.07);
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+}
+.modal-links .icon-github:hover,
+.modal-links .icon-link:hover {
+  background: var(--blue, #5dbcfc);
+  color: #fff;
+  box-shadow: 0 2px 12px var(--blue, #5dbcfc);
+}
+.dark .modal-links .icon-github,
+.dark .modal-links .icon-link {
+  background: rgba(93, 188, 252, 0.13);
+  color: var(--blue, #5dbcfc);
+}
+.dark .modal-links .icon-github:hover,
+.dark .modal-links .icon-link:hover {
+  background: var(--blue, #5dbcfc);
+  color: #fff;
+}
+@keyframes modalIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* More Button Enhancement */
+.more-btn {
+  background: transparent;
+  border: 1px solid var(--blue, #5dbcfc);
+  color: var(--title, #222);
+  border-radius: 20px;
+  padding: 4px 16px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.more-btn:hover {
+  background: var(--blue, #5dbcfc);
+  color: #fff;
+  border-color: var(--blue, #5dbcfc);
+}
+/*======================
+table of contents
+========================
+1.left section
+2.right section*/
+main.flex {
+  gap: 2rem;
+  align-items: start;
+}
+
+/*======================
+1.left section ===>Buttons
+========================*/
+main.flex section.leftSection {
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+main.flex section.leftSection button {
+  text-align: center;
+  /* display: block;the button will are  in one column but the names will be not in center  */
+  background-color: rgba(36, 37, 46, 1);
+  cursor: pointer;
+  font-size: 1.05rem;
+  width: 11rem;
+  padding: 0.75rem 0;
+  text-transform: capitalize;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+main.flex section.leftSection button:hover {
+  opacity: 1;
+}
+main.flex section.leftSection button.active {
+  border: 1px solid var(--blue);
+  opacity: 1;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  padding: 0.8rem 0;
+  border-radius: 5px;
+}
+
+.light main.flex section.leftSection button.active {
+  border: 1px solid #000;
+}
+
+/*======================
+2. right section ==>artacle
+========================*/
+
+main section.rightSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  align-items: stretch;
+  justify-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  main section.rightSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  main section.rightSection {
+    grid-template-columns: 1fr;
+  }
+}
+
+main section.rightSection .card {
+  box-shadow: -1px 1px 1px rgb(0, 0, 0, 0.16), 1px 1px 1px rgb(0, 0, 0, 0.15);
+  border: 1px solid rgba(93, 188, 252, 0.3);
+  border-radius: 5px;
+  transition: 0.3s;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
+}
+.light main section.rightSection .card,
+.light main section.rightSection .card:hover {
+  border: none;
+}
+.light main section.rightSection .card:hover {
+  background-color: rgba(248, 248, 248);
+  border: 1px solid var(--blue);
+  cursor: pointer;
+  rotate: 1deg;
+  scale: 1.01;
+}
+
+main section.rightSection .card img {
+  border-radius: 5px;
+  height: 180px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: #fff;
+}
+main section.rightSection .card div.box {
+  padding: 1rem 0.4rem;
+}
+main section.rightSection .card div.box .title {
+  color: var(--title);
+  text-transform: capitalize;
+}
+main section.rightSection .card div.box .subtitle {
+  line-clamp: 2;
+  color: var(--subtitle);
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+  margin-bottom: 1.1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.2em;
+  max-height: 2.2em;
+  line-height: 1.1em;
+}
+main section.rightSection .card div.box div.icons {
+  justify-content: space-between;
+}
+
+.card .icon-link,
+.card .icon-github {
+  color: var(--subtitle);
+  padding-top: 5px;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.card .icon-link:hover,
+.card .icon-github:hover {
+  color: var(--icon-hover);
+
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.card a {
+  color: var(--blue);
+  font-size: 0.9rem;
+  margin-right: 12px;
+}
+
+@media (max-width: 600px) {
+  main.flex {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  main.flex section.leftSection {
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  main.flex section.leftSection button {
+    width: 7rem;
+    padding: 0.8rem 0;
+    font-size: 0.8rem;
+  }
+}
